@@ -1,4 +1,3 @@
-import { useEffect } from 'react';
 import Index from './pages/Index';
 import Navbar from './components/Navbar';
 import GlyphorBadge from './utils/GlyphorBadge';

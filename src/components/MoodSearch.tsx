@@ -1,9 +1,6 @@
 import { motion } from 'framer-motion';
-import { useState } from 'react';
 
 const MoodSearch = () => {
-  const [val, setVal] = useState("");
-
   return (
     <section className="py-32 px-8 bg-ink text-pearl relative overflow-hidden">
       <div className="max-w-6xl mx-auto text-center">
@@ -20,7 +17,6 @@ const MoodSearch = () => {
             type="text" 
             placeholder="E.g. 'A rainy afternoon in Kyoto'"
             className="w-full bg-transparent border-b border-pearl/20 py-8 text-3xl md:text-6xl font-serif text-center focus:outline-none focus:border-pearl/80 transition-colors"
-            onChange={(e) => setVal(e.target.value)}
           />
           <div className="absolute bottom-0 left-0 h-[2px] bg-mist w-0 group-focus-within:w-full transition-all duration-1000" />
         </div>
